@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    background-color: darkslategray;
+}
+.stairs{
+    height: 100px;
+    width:100px;
+    background-color: rgba(255, 255, 255, 0.904);
+    border-radius: 50%;
+    position: absolute;
+
+    /*animation property*/
+animation-name: ball;
+animation-duration: 5s;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+}
+@keyframes ball{
+    0%{
+        left:0;
+        top:0;
+        background-image: linear-gradient(pink,rgb(159, 229, 247));
+    }
+    5%{
+        left: 0;
+        top:100px;
+        background-image: linear-gradient(lightpink,brown);
+    }
+    10%{
+        left: 100px;
+        top: 100px;
+        background-image: linear-gradient(rgb(174, 174, 238),yellow);
+    }
+    15%{
+        left: 200px;
+        top: 100px;
+        background-image: linear-gradient(rgb(172, 137, 137),chocolate);
+    }
+    20%{
+        left: 200px;
+        top:200px;
+        background-image: linear-gradient(orange, black);
+    }
+    25%{
+        left: 300px;
+        top: 200px;
+        background-image: linear-gradient(grey,red);
+    }
+    30%{
+        left: 300px;
+        top: 300px;
+        background-image: linear-gradient(seagreen,deeppink);
+    }
+    35%{
+        left: 400px;
+        top: 300px;
+        background-image: linear-gradient(white,yellow);
+    }
+    40%{
+        left:400px;
+        top:400px;
+        background-image: linear-gradient(darkblue,darkred);
+    }
+    
+}
